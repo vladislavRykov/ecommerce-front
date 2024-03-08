@@ -38,7 +38,7 @@ const ProductPage = async (props: ParamsProps) => {
           {data.properties && (
             <ul title="Свойства продукта" className={s.product_props}>
               {Object.keys(data.properties).map((key) => (
-                <li className={s.product_prop}>{`${key}: ${data.properties?.[key]}`}</li>
+                <li key={key} className={s.product_prop}>{`${key}: ${data.properties?.[key]}`}</li>
               ))}
             </ul>
           )}

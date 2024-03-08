@@ -4,19 +4,10 @@ import { Category, MongooseCategory, MongooseCategoryPopulated } from '@/types/t
 import { ObjectId } from 'mongodb';
 import { getServerSession } from 'next-auth';
 import { NextRequest, NextResponse } from 'next/server';
-import { checkAuth, checkAuthV2 } from '../auth/[...nextauth]/route';
 
 export async function GET(req: NextRequest) {
   await mongooseConnect();
-  try {
-    await checkAuth();
-  } catch (error) {
-    if (error instanceof Error) {
-      return NextResponse.json({ message: error.message }, { status: 400 });
-    } else {
-      return NextResponse.json({ message: error }, { status: 400 });
-    }
-  }
+
   const { searchParams } = new URL(req.url);
   const id = searchParams.get('id');
   if (id) {

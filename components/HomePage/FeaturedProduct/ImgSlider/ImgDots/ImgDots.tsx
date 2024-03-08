@@ -14,8 +14,9 @@ const ImgDots: React.FC<ImgDotsProps> = ({ urls, currentImgIdx, setCurrentImgIdx
   };
   return (
     <div className={s.dots}>
-      {urls.map((_, idx) => (
+      {urls.map((url, idx) => (
         <button
+          key={url}
           // className={cn(s.dots_dot, { [s.dots_selected]: idx === currentImgIdx })}
           className={s.dots_btn}
           onClick={(e) => onDotClick(e, idx)}>

@@ -29,7 +29,7 @@ const LatestProducts = () => {
       <h2 className={s.latestproducts_title}>Последние товары</h2>
       <div ref={scrollRef} className={s.latestproducts_products}>
         {data.map((product) => (
-          <LatestProductItem product={product} />
+          <LatestProductItem key={product._id} product={product} />
         ))}
       </div>
     </div>
