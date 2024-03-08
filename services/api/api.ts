@@ -6,7 +6,12 @@ const instance = axios.create({
 });
 
 const API = {
-  getAllProducts: () => instance.get<MongooseProductPopulated[]>('/products'),
+  getAllProducts: ({ sort = 1 }: { sort?: -1 | 1 }) =>
+    instance.get<MongooseProductPopulated[]>('/products', {
+      params: {
+        sort: sort,
+      },
+    }),
   getProductsByIds: (ids: string[]) => instance.post<MongooseProductPopulated[]>('/products', ids),
   getLatestProducts: (limit?: number) =>
     instance.get<MongooseProductPopulated[]>(`/products/latest?limit=${limit}`),
