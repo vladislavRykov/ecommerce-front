@@ -1,0 +1,43 @@
+.wrapper {
+  border-radius: 15px;
+  padding: 15px;
+  background-color: white;
+}
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &_flex {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  &_submit {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    &:disabled {
+      background-color: transparent;
+      border: 1px solid rgb(187, 187, 187);
+      color: rgb(187, 187, 187);
+    }
+  }
+  &_status {
+    height: 14px;
+    font-size: 14px;
+    color: rgb(18, 18, 204);
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}

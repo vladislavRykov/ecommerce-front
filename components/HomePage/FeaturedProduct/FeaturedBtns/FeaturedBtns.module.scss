@@ -1,0 +1,28 @@
+.featuredBtns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &_btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    &_more {
+      border: 1px solid white;
+      background-color: transparent;
+      &:hover {
+        background-color: rgb(80, 80, 80);
+      }
+    }
+    &_cart {
+      border: 1px solid transparent;
+      background-color: rgb(61, 61, 233);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      &:hover {
+        background-color: rgb(102, 102, 232);
+      }
+    }
+  }
+}

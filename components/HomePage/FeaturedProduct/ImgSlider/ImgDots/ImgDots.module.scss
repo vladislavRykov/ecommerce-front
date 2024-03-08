@@ -1,0 +1,21 @@
+.dots {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  &_btn {
+    padding: 5px;
+  }
+  &_dot {
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 50%;
+  }
+  &_selected {
+    background-color: rgb(161, 161, 161);
+  }
+}

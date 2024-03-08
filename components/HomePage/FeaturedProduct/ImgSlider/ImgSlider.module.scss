@@ -1,0 +1,17 @@
+.slider {
+  position: relative;
+  &_img {
+    border-radius: 20px;
+  }
+  &_arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &_left {
+      left: 10px;
+    }
+    &_right {
+      right: 10px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  display: none;
+  background-color: rgb(19, 19, 19);
+  font-size: 16px;
+  height: 80px;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: white;
+  font-size: 20px;
+}
+.navBtn {
+  color: white;
+}
+@media (max-width: 900px) {
+  .wrapper {
+    display: flex;
+  }
+}

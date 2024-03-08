@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  background-color: rgb(19, 19, 19);
+  font-size: 16px;
+  height: 80px;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: white;
+  font-size: 20px;
+}
+.nav {
+  display: flex;
+
+  &_link {
+    transition: color 0.3;
+    color: rgb(105, 105, 105);
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &_active {
+      color: rgb(169, 168, 168);
+    }
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    display: none;
+  }
+}

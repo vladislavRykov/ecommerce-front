@@ -1,0 +1,46 @@
+.navOverlay {
+  position: fixed;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: black;
+  color: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1000;
+  &_burger {
+    position: fixed;
+    right: 40px;
+    top: 20px;
+  }
+  &_container {
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &_ecommerce {
+    align-self: center;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  &_navLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &_link {
+    &_activeLink {
+      color: black;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+  }
+  &_mountedStyles {
+    opacity: 1;
+  }
+}

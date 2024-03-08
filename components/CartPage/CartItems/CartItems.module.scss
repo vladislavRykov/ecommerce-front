@@ -1,0 +1,32 @@
+.wrapper {
+  width: 55%;
+}
+.cartItems {
+  position: relative;
+  box-shadow: 0px 0px 5px 1px rgb(223, 223, 223);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  &_emptyCart {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  &_icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -15px;
+    background-color: white;
+    padding: 5px;
+    box-sizing: content-box;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper {
+    width: 100%;
+  }
+}

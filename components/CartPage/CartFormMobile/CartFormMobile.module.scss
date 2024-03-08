@@ -1,0 +1,37 @@
+.cartFormMobile {
+  display: none;
+  margin-bottom: 20px;
+  &_btn {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0px 0px 5px 3px rgb(188, 188, 188);
+      border: 1px solid transparent;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  &_form {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 800;
+    background-color: rgba(0, 0, 0, 0.356);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .cartFormMobile {
+    display: block;
+  }
+}
