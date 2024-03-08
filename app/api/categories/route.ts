@@ -2,7 +2,6 @@ import { mongooseConnect } from '@/lib/mongoose';
 import { Models } from '@/models/models';
 import { Category, MongooseCategory, MongooseCategoryPopulated } from '@/types/types';
 import { ObjectId } from 'mongodb';
-import { getServerSession } from 'next-auth';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest) {

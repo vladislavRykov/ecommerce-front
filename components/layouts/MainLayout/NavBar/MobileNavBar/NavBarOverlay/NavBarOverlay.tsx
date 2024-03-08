@@ -1,7 +1,6 @@
 'use client';
 import Button from '@/components/UI/Button/Button';
 import { delay } from '@/utils/delay';
-import { signOut } from 'next-auth/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';

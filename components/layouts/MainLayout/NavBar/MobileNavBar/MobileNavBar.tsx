@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import { IconType } from 'react-icons';
 import { BsShop } from 'react-icons/bs';
 import Link from 'next/link';
-import { signOut } from 'next-auth/react';
 import { CiLogout } from 'react-icons/ci';
 import Button from '@/components/UI/Button/Button';
 import NavBarOverlay from './NavBarOverlay/NavBarOverlay';
